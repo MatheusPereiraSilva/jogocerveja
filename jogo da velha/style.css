@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Isso garante que o conteúdo fique no centro vertical da tela. */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+    font-size: 24px; /* Tamanho da fonte para o conteúdo das casas */
+    vertical-align: middle; /* Centraliza o conteúdo verticalmente */
+    line-height: 100px; /* Define a altura da linha igual à altura do quadrado */
+}
+
+.inicio {
+    display: inline-block;
+}
+
+.o {
+    position: relative;
+}
+
+.o::after {
+    content: "🍺";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x::after {
+    content: "🥩";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#restart-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
